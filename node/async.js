@@ -6,8 +6,15 @@ const sleepyHello = () => new Promise(resolve => setTimeout(() => {
 }, 1200));
 
 const test = () => {
-  sleepyHello();
-  console.log('Now this');
+  sleepyHello() // option 1
+    .then(() => {
+      console.log('Now this');
+    });
 };
+
+// const test = () => {
+//   await sleepyHello(); // option 2
+//   console.log('Now this');
+// };
 
 test();
