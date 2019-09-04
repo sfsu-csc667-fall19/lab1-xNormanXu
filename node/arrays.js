@@ -2,7 +2,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 // arrays can be delared explicitly
-const array = [9, 3, 4];
+const array = [9, 3, 4, 123456];
 
 // or with new keyword
 const anotherArray = new Array(5);
