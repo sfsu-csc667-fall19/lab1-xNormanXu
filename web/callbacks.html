@@ -7,12 +7,14 @@
 <body>
   Open the console to see output
   <script>
+    let temp = 4;
     const doSomethingAsync = (callback) => {
       setTimeout(callback, 2000);
     }
-
+    
+    temp += 1;
     doSomethingAsync(() => {
-      alert('This happens after 2 seconds');
+      alert(temp);
     });
   </script>
 </body>
